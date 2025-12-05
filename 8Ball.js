@@ -21,42 +21,42 @@ function shakeMagic8Ball () {
   switch (randomNumber) {
     case 0:
       answer = 'Yes'
-      image = 'yes-happy=hamster.jpg.jpg'
+      image = 'happy-hamster.jpg'
       color = 'text-success'
-      break
+      break;
     case 1:
       answer = 'No'
-      image = 'no-image.jpg'
+      image = 'images2.jpg'
       color = 'text-danger'
       break
     case 2:
       answer = 'Maybe'
-      image = 'maybe-image.jpg'
+      image = 'hamster-maybe.jpg'
       color = 'text-warning'
       break
     case 3:
       answer = 'Ask again later'
-      image = 'later-image.jpg'
+      image = 'askagain.jpg'
       color = 'text-secondary'
       break
     case 4:
       answer = 'Cannot predict now'
-      image = 'cannot-predict-image.jpg'
+      image = 'realham.jpg'
       color = 'text-muted'
       break
     case 5:
       answer = "Don't count on it"
-      image = 'dont-count-on-it-image.jpg'
+      image = 'images (1).jpg'
       color = 'text-danger'
       break
     case 6:
       answer = 'Most likely'
-      image = 'most-likely-image.jpg'
+      image = 'smart.jpg'
       color = 'text-success'
       break
     case 7:
       answer = 'Outlook not so good'
-      image = 'outlook-not-good-image.jpg'
+      image = 'HAMSTER.jpg'
       color = 'text-danger'
       break
     default:
@@ -64,7 +64,7 @@ function shakeMagic8Ball () {
   }
 
   const responseText = document.getElementById('response-text')
-  responseText.innerText = answer
+  responseText.innerText = `${answer}`
   responseText.classList = `display-4 ${color}`
-  document.getElementById('response-image').src = image
+  document.getElementById('response-img').src = `${image}`
 }
