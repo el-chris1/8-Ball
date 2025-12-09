@@ -60,7 +60,7 @@ function shakeMagic8Ball () {
       color = 'text-danger'
       break
     default:
-      break
+      break;
   }
 
   const responseText = document.getElementById('response-text')
